@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Circuit_Headline : NSObject
+@interface Circuit_Headline : NSObject <KCSPersistable>
+
+@property (nonatomic, copy) NSString *entityId;
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *place;
+@property (nonatomic, copy) NSMutableArray *tags;
+@property (nonatomic, copy) NSDate *timestamp;
 
 @end

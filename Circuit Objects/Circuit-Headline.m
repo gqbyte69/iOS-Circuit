@@ -10,4 +10,22 @@
 
 @implementation Circuit_Headline
 
+- (id)init
+{
+	return self;
+}
+
+- (NSDictionary *)hostToKinveyPropertyMapping
+{
+	return @{
+			 @"entityId" : KCSEntityKeyId, //the required _id field
+    @"author" : @"author",
+    @"description" : @"description",
+    @"name" : @"name",
+	 @"place" : @"place",
+	 @"tags" : @"tags",
+	 @"timestamp" : @"timestamp"
+    };
+}
+
 @end
