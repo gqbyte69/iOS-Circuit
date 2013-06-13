@@ -10,4 +10,20 @@
 
 @implementation Circuit_Activity
 
+- (id)init
+{
+	return self;
+}
+
+- (NSDictionary *)hostToKinveyPropertyMapping
+{
+	return @{
+			 @"entityId" : KCSEntityKeyId, //the required _id field
+    @"name" : @"name",
+    @"stepnumber" : @"stepnumber",
+    @"subactivity" : @"subactivity",
+	 @"sublocation" : @"sublocation"
+    };
+}
+
 @end

@@ -10,4 +10,23 @@
 
 @implementation CircuitHeadlineParams
 
+@synthesize entityId;
+@synthesize author;
+@synthesize description;
+@synthesize name;
+@synthesize place;
+@synthesize tags;
+@synthesize timestamp;
+
+- (id)init
+{
+	return self;
+}
+
++ (CircuitHeadlineParams *)headlineParam
+{
+	CircuitHeadlineParams *param = [[CircuitHeadlineParams alloc] init];
+	return param;
+}
+
 @end

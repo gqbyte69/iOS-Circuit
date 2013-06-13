@@ -10,4 +10,8 @@
 
 @interface CellActivities : UITableViewCell
 
+@property (nonatomic, retain) IBOutlet UILabel *activityName;
+@property (nonatomic, retain) IBOutlet UILabel *activityLocation;
+@property (nonatomic, retain) IBOutlet UIButton *btnActivityType;
+
 @end

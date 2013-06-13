@@ -8,7 +8,7 @@
 
 #import "CircuitAppDelegate.h"
 
-#import "CircuitViewController.h"
+//#import "CircuitViewController.h"
 
 @implementation CircuitAppDelegate
 
@@ -19,7 +19,21 @@
     self.viewController = [[CircuitViewController alloc] initWithNibName:@"CircuitViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    return YES;
+	
+	(void) [[KCSClient sharedClient] initializeKinveyServiceForAppKey:@"kid_eP79cFett5"
+																		 withAppSecret:@"27d32ed547a84545b863e2cdf5984076"
+																		  usingOptions:@{KCS_USER_CAN_CREATE_IMPLICT : @NO}];
+   
+//	[KCSPing pingKinveyWithBlock:^(KCSPingResult *result) {
+//		if (result.pingWasSuccessful == YES){
+//			NSLog(@"Kinvey Ping Success");
+//		} else {
+//			NSLog(@"Kinvey Ping Failed");
+//		}
+//	}];
+	
+	
+	return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

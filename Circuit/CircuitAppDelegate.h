@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CircuitViewController.h"
 
-@class CircuitViewController;
+
+//@class CircuitViewController;
 
 @interface CircuitAppDelegate : UIResponder <UIApplicationDelegate>
 

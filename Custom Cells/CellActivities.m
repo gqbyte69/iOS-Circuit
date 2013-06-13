@@ -10,6 +10,16 @@
 
 @implementation CellActivities
 
+@synthesize activityName;
+@synthesize activityLocation;
+@synthesize btnActivityType;
+
+- (void)awakeFromNib
+{
+	activityName.text = @"";
+	activityLocation.text = @"";
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

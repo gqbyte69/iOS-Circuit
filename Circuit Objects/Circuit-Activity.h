@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Circuit_Activity : NSObject
+@interface Circuit_Activity : NSObject  <KCSPersistable>
+
+@property (nonatomic, copy) NSString *entityId;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSNumber *stepnumber;
+@property (nonatomic, copy) NSString *subactivity;
+@property (nonatomic, copy) NSString *sublocation;
 
 @end
